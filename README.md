@@ -17,3 +17,8 @@
 - **Practice Tasks**:
     - Backtracking, SumofN Numbers
 
+## Day 4: Recursion & Hashing
+- **Practice Tasks**:
+    - Patterns with Recursion, Subsequences using recursion, Multiple recursion Calls
+    - Hashing
+
