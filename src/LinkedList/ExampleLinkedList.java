@@ -11,8 +11,11 @@ public class ExampleLinkedList {
             this.next = null;
         }
     }
-    public static void main(String[] args) {
-        ExampleLinkedList list = new ExampleLinkedList();
-        
+    
+    // adding first, last
+    public void addFirst(String data){
+        Node newNode = new Node(data);
+
+
     }
 }
