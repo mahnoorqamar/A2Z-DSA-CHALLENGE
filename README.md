@@ -22,3 +22,7 @@
     - Patterns with Recursion, Subsequences using recursion, Multiple recursion Calls
     - Hashing
 
+## Day 5: HashMap, LinkedList, Sorting, ArrayList
+- **Practice Tasks**:
+   
+
