@@ -12,7 +12,7 @@
     - Numbers
         - Count Digits, Reverse Number, Check Palindrome, GCD or HCF, Armstrong Number, Print all Divisions, Check for Prime
     - Arrays
-      - 
+      
 ## Day 3: Recursion
 - **Practice Tasks**:
     - Backtracking, SumofN Numbers
@@ -21,4 +21,8 @@
 - **Practice Tasks**:
     - Patterns with Recursion, Subsequences using recursion, Multiple recursion Calls
     - Hashing
+
+## Day 5: HashMap, LinkedList, Sorting, ArrayList
+- **Practice Tasks**:
+   
 
