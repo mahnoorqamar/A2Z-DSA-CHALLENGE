@@ -24,5 +24,9 @@
 
 ## Day 5: HashMap, LinkedList, Sorting, ArrayList
 - **Practice Tasks**:
+
+## Day 6: Binary Search, Linear Search
+
+## Day 7: Sorting Algorithmns
    
 
