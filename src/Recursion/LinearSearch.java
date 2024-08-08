@@ -5,11 +5,16 @@ public class LinearSearch {
 
     }
 
-    static boolean find(int[] arr, int index, int target){
+    static int find(int[] arr, int index, int target){
         if (index == arr.length){
-            return false;
+            return -1;
         }
 
-        return arr[index] == target || find(arr, target, index+1);
+        if (arr[index] == target){
+            return index;
+        } else {
+            return find(arr, target, index+1);
+        }
+
     }
 }
