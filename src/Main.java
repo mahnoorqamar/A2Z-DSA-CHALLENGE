@@ -1,18 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {4, 8, 6, 9, 10, 55};
-        System.out.println(max(arr));
+        int[] arr = {9, 5, 7, 3, 8, 10, 56, 4};
+
+
 
     }
 
-    static boolean max(int[] arr){
-        int max = 0;
 
-        for (int i = 0; i < arr.length; i++){
-            if (arr[max] < arr[i]){
-                max = i;
-            }
-        }
-        return false;
-    }
+
 }
