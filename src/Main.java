@@ -1,9 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {9, 5, 7, 3, 8, 10, 56, 4};
+        numbers(10);
+    }
+
+    public static void numbers(int n){
+        if (n == 0){
+            return;
+        }
 
 
-
+        numbers(n-1);
+        System.out.println(n);
     }
 
 
