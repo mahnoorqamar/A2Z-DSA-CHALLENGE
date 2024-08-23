@@ -9,6 +9,6 @@ public class Palindrome {
     public static boolean Pallindrome(String s){
         StringBuilder sc = new StringBuilder(s);
         String reversed = sc.reverse().toString();
-        return reversed.equals(s);
+        return sc.equals(s);
     }
 }
