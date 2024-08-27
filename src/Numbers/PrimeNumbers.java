@@ -5,7 +5,8 @@ public class PrimeNumbers {
 
     }
     static boolean isPrime(int N){
-        if (N <= 1) {
+
+        if (N <= 1){
             return false;
         }
         for (int i = 2; i <= Math.sqrt(N); i++) {

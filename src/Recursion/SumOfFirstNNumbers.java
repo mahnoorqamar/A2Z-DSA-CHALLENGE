@@ -13,4 +13,8 @@ public class SumOfFirstNNumbers {
         }
          fun(i - 1, sum + i);
     }
+
+    public static void sumOfN(int i, int sum){
+        
+    }
 }

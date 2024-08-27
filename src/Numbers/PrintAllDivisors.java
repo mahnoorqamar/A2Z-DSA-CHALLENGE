@@ -15,6 +15,6 @@ public class PrintAllDivisors {
             }
         }
 
-
+        return -1;
     }
 }
