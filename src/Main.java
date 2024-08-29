@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-       printToN(1, 10);
+
     }
 
     public static void printN(int num){
@@ -15,13 +15,31 @@ public class Main {
         num++;
     }
 
-    public static void printToN(int num, int n2){
-        if(num > n2){
-            return;
+    public static int linearSearch(int[] arr, int target){
+        if(arr.length == 0){
+            return -1;
         }
 
-        printToN(num + 1, n2);
-        System.out.println(num);
+        for(int i = 0; i <= arr.length; i++){
+            if(arr[i] == target){
+                target = arr[i];
+            }
+            System.out.println(target);
+        }
+
+        return -1;
+    }
+
+    public static int[] reverseArray(int [] arr){
+        int[] reversed = new int[arr.length];
+        int end = arr.length -1;
+
+        for(int i = 0; i < arr.length; i++){
+            reversed[i] = arr[end];
+            end--;
+        }
+        return reversed;
+
     }
 
 
