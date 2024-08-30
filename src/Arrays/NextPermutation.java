@@ -8,23 +8,19 @@ public class NextPermutation {
         int n = nums.length;
         int i = n - 2;
 
-        // Find the largest index i such that nums[i] < nums[i + 1]
         while (i >= 0 && nums[i] >= nums[i + 1]) {
             i--;
         }
 
         if (i >= 0) {
-            // Find the largest index j such that nums[i] < nums[j]
             int j = n - 1;
             while (nums[j] <= nums[i]) {
                 j--;
             }
 
-            // Swap the values of nums[i] and nums[j]
             swap(nums, i, j);
         }
 
-        // Reverse the sequence from nums[i + 1] to the end
         reverse(nums, i + 1, n - 1);
     }
 
