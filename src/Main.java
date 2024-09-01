@@ -1,47 +1,34 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
     }
 
-    public static void printN(int num){
-        if(num > 0){
-            System.out.println(num);
-            return;
+    public int maxSumSubarray(int[] nums, int k) {
+        if (nums.length < k) {
+            throw new IllegalArgumentException("Array length is less than the size of the window.");
         }
 
-        printN(num);
-        num++;
+        int maxSum = 0;
+        int windowSum = 0;
+
+        // Compute the sum of the first window
+        for (int i = 0; i < k; i++) {
+            windowSum += nums[i];
+        }
+        maxSum = windowSum;
+
+        // Slide the window across the array
+        for (int i = k; i < nums.length; i++) {
+            windowSum += nums[i] - nums[i - k];
+            maxSum = Math.max(maxSum, windowSum);
+        }
+
+        return maxSum;
     }
-
-    public static int linearSearch(int[] arr, int target){
-        if(arr.length == 0){
-            return -1;
-        }
-
-        for(int i = 0; i <= arr.length; i++){
-            if(arr[i] == target){
-                target = arr[i];
-            }
-            System.out.println(target);
-        }
-
-        return -1;
-    }
-
-    public static int[] reverseArray(int [] arr){
-        int[] reversed = new int[arr.length];
-        int end = arr.length -1;
-
-        for(int i = 0; i < arr.length; i++){
-            reversed[i] = arr[end];
-            end--;
-        }
-        return reversed;
-
-    }
-
 
 
 }
