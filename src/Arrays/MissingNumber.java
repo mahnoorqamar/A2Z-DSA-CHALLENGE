@@ -6,8 +6,8 @@ public class MissingNumber {
 
     }
 
-    public static int missingNumber(int [] arr, int N) {
-
+    public static int missingNumber(int [] arr) {
+        int N = arr.length -1;
         //Summation of first N numbers:
         int sum = (N * (N + 1)) / 2;
 
@@ -19,6 +19,20 @@ public class MissingNumber {
 
         int missingNum = sum - s2;
         return missingNum;
+    }
+
+    static int missing(int[]arr){
+        int n = arr.length;
+
+        int sum = (n*(n + 1)) / 2;
+
+        int sum2 = 0;
+        for(int i = 0 ; i < arr.length -1; i++){
+            sum2 += arr[i];
+        }
+
+        int missingnum = sum - sum2;
+        return missingnum;
     }
 }
 
