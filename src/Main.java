@@ -4,8 +4,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String s = "Hello";
+        String s = "madam";
         System.out.println(reverseString(s));
+        System.out.println(pallindrome(s));
     }
 
     public int maxSumSubarray(int[] nums, int k) {
@@ -48,6 +49,23 @@ public class Main {
         }
 
         return new String(string);
+    }
+
+    public static boolean pallindrome(String s){
+        int start = 0;
+        int end = s.length() -1;
+
+        while(start < end){
+            if(s.charAt(start) != s.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+        }
+
+        return true;
+
+
     }
 
 
