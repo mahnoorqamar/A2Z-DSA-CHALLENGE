@@ -4,7 +4,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
+        String s = "Hello";
+        System.out.println(reverseString(s));
     }
 
     public int maxSumSubarray(int[] nums, int k) {
@@ -28,6 +29,25 @@ public class Main {
         }
 
         return maxSum;
+    }
+
+    public static String reverseString(String s){
+        int start = 0;
+        int end = s.length() -1;
+
+        char[] string = s.toCharArray();;
+
+        while(start < end){
+            char temp = string[start];
+            string[start] = string[end];
+            string[end] = temp;
+
+            start++;
+            end--;
+
+        }
+
+        return new String(string);
     }
 
 

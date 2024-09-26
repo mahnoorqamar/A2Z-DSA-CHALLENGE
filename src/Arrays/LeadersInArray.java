@@ -49,4 +49,20 @@ public class LeadersInArray {
         Collections.reverse(leaders);
         return leaders;
     }
+
+
+    public static ArrayList<Integer> leaders(int n, int arr[]) {
+        ArrayList<Integer> leaders = new ArrayList<>();
+        int max = Integer.MIN_VALUE;
+
+        for(int i = arr.length -1; i >=0; i--){
+            if(arr[i] >= max){
+                max = arr[i];
+                leaders.add(max);
+            }
+        }
+
+        Collections.reverse(leaders);
+        return leaders;
+    }
 }
