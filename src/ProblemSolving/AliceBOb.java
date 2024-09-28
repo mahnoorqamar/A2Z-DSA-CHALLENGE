@@ -5,21 +5,24 @@ import java.util.List;
 
 public class AliceBOb {
     public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
-//        If a[i] > b[i], then Alice is awarded 1 point.
-//        If a[i] < b[i], then Bob is awarded 1 point.
-//        If a[i] = b[i], then neither person receives a point.
-
+        // Initialize scores
         int aliceScore = 0;
         int bobScore = 0;
 
-        for(int i = 0; i < 3; i++){
-            if(a.get(i) > b.get(i)){
-                aliceScore++;
+        // Loop through each category (0, 1, 2)
+        for (int i = 0; i < 3; i++) {
+            if (a.get(i) > b.get(i)) {
+                aliceScore++; // Alice earns a point
             } else if (a.get(i) < b.get(i)) {
-                bobScore++;
+                bobScore++;   // Bob earns a point
             }
         }
 
-        return new ArrayList<>(aliceScore, bobScore);
+        // Create a list to hold the scores and return it
+        List<Integer> scores = new ArrayList<>();
+        scores.add(aliceScore);
+        scores.add(bobScore);
+        return scores;
+
     }
 }
